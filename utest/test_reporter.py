@@ -1,12 +1,12 @@
 import json
 
 import pytest
-from Automation.reporter import insert_test_in_list_by_ascending_order_of_test_name
+from reporter import insert_test_in_list_by_ascending_order_of_test_name
 
 
 @pytest.fixture()
 def reporter():
-    from Automation.reporter import Reporter
+    from reporter import Reporter
     json_string = '{"test_suites":[' \
                   '{"suite_name":"hvac_mode",' \
                   '"results": [' \

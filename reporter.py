@@ -1,4 +1,3 @@
-import json
 from typing import List
 
 
@@ -46,7 +45,7 @@ class Reporter:
                        "blocked": [], "long_execution": 0}
 
             for test in self.result_json_obj["test_suites"][i]["results"]:
-                if test["time"] is not "" and float(test["time"]) > 10.0:
+                if test["time"] != "" and float(test["time"]) > 10.0:
                     summary["long_execution"] = summary["long_execution"] + 1
 
                 if test["status"]  == "pass":
