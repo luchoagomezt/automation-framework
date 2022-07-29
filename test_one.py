@@ -22,6 +22,7 @@ def execute(results_file):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--results_file', '-rf', help='path/name to the test results json file', type=str)
+    parser.add_argument('--results_file', '-rf', required=True,
+                        help='path/name to the test results json file', type=str)
     args = parser.parse_args()
     execute(**vars(args))
