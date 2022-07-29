@@ -3,7 +3,7 @@ from requests.exceptions import HTTPError
 
 
 class OpenWeather:
-    APIPID:str = "55f5ab2e144704e42c8bf3522249b921"
+    APIPID:str = "<Key goes here>"
 
     def __init__(self, city:str):
         self.weather = f"http://api.openweathermap.org/data/2.5/weather?" \
