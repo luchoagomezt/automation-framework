@@ -4,7 +4,6 @@ import argparse
 
 
 def execute(canadian_city:str = None):
-    OpenWeather(canadian_city)
     forecaster = Forecaster(OpenWeather(canadian_city))
     print(forecaster)
 
